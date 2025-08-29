@@ -1,0 +1,25 @@
+{
+  "name": "hardhat",
+  "version": "1.0.0",
+  "main": "hardhat.config.js",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-etherscan": "^3.1.8",
+    "dotenv": "^16.5.0",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.24.3"
+  },
+  "scripts": {
+    "test": "npx hardhat test",
+    "compile": "npx hardhat compile",
+    "deploy:localhost": "npx hardhat run scripts/deploy.js --network localhost",
+    "deploy:goerli": "npx hardhat run scripts/deploy.js --network goerli",
+    "deploy:sepolia": "npx hardhat run scripts/deploy.js --network sepolia",
+    "deploy:mainnet": "npx hardhat run scripts/deploy.js --network mainnet",
+    "node": "npx hardhat node"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
